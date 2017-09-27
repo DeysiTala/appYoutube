@@ -11,7 +11,7 @@ let app = {
 
    init: function() {
       //app.videoSearch("iPhone");
-      app.youtubeSearch("LG G6");
+      app.youtubeSearch("Laboratoria");
    },
    //<iframe className="embed-responsive-item" src={url}> </iframe>
    getVideoList: function(videos) {
@@ -19,7 +19,8 @@ let app = {
          const imageUrl = video.snippet.thumbnails.default.url;
          const url = `https://www.youtube.com/embed/${video.id.videoId}`;
          return `<li> 
-                     <img class="media-object" src=${imageUrl} /> 
+                      <p>
+                      ${video.snippet.title}
                      <p> 
                         <iframe class="embed-responsive-item" src=${url}> </iframe>
                      </p>

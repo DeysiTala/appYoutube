@@ -2,6 +2,7 @@ body {
   background: black; 
   font-family: arial;
   color:red;
+  text-align: 
   /*xt-transform: uppercase;*/
   
 
@@ -256,4 +257,8 @@ h3{
   left: -4.5%;
   background: inherit;
   border-radius: 5% / 50%;
+}
+
+ol {
+  list-style: none;
 }
